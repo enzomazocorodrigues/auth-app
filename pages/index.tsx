@@ -5,7 +5,7 @@ import { PageIcon } from "../components/PageIcon";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen bg-slate-100 flex justify-center items-center">
+    <div className="w-full h-screen bg-slate-100 flex justify-center items-center p-10">
       <div className="w-[426px] bg-white drop-shadow-sm rounded-md p-6 flex flex-col gap-6">
         <div className="flex gap-4 items-center">
           <PageIcon>
@@ -20,11 +20,16 @@ export default function Home() {
         <hr className="w-full" />
         <Input label="Email" id="email" type="email" />
         <Input label="Password" id="password" type="password" />
-        <Button>Sign in</Button>
+        <Button asChild>
+          <a href="/success">Sign in</a>
+        </Button>
         <hr className="w-full" />
         <span className="text-center text-sm text-slate-600 font-medium">
           Don’t have an account?
-          <a className="ml-1 text-blue-500" href="/">
+          <a
+            className="ml-1 text-blue-500 outline-none focus:ring-2 rounded-sm hover:text-blue-400"
+            href="/signup"
+          >
             Sign up
           </a>
         </span>
