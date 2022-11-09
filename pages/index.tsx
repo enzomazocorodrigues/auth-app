@@ -1,4 +1,5 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import { Button } from "../components/Button";
 import { PageIcon } from "../components/PageIcon";
 
@@ -17,7 +18,7 @@ export default function Home() {
           faucibus pulvinar.
         </h2>
         <Button asChild>
-          <a href="/signin">Log out</a>
+          <Link href="/signin">Log out</Link>
         </Button>
       </div>
     </div>

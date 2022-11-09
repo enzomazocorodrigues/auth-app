@@ -1,4 +1,5 @@
 import { KeyIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { PageIcon } from "../components/PageIcon";
@@ -21,17 +22,17 @@ export default function SignIn() {
         <Input label="Email" id="email" type="email" />
         <Input label="Password" id="password" type="password" />
         <Button asChild>
-          <a href="/">Sign in</a>
+          <Link href="/">Sign in</Link>
         </Button>
         <hr className="w-full" />
         <span className="text-center text-sm text-slate-600 font-medium">
           Don’t have an account?
-          <a
+          <Link
             className="ml-1 text-blue-500 outline-none focus:ring-2 rounded-sm hover:text-blue-400"
             href="/signup"
           >
             Sign up
-          </a>
+          </Link>
         </span>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { DocumentCheckIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { PageIcon } from "../components/PageIcon";
@@ -23,17 +24,17 @@ export default function SignUp() {
         <Input label="Password" id="password" type="password" />
         <Input label="Confirm password" id="confirm-password" type="password" />
         <Button asChild>
-          <a href="/signin">Sign up</a>
+          <Link href="/signin">Sign up</Link>
         </Button>
         <hr className="w-full" />
         <span className="text-center text-sm text-slate-600 font-medium">
           Already have an account?
-          <a
+          <Link
             className="ml-1 text-blue-500 outline-none focus:ring-2 rounded-sm hover:text-blue-400"
             href="/signin"
           >
             Sign in
-          </a>
+          </Link>
         </span>
       </div>
     </div>
