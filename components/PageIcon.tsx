@@ -13,9 +13,7 @@ export function PageIcon({ children, large }: PageIconProps) {
         large ? "w-24 h-24" : "w-12 h-12"
       } rounded-full bg-green-100 flex justify-center items-center`}
     >
-      <Slot itemProp="width" className="text-green-500">
-        {children}
-      </Slot>
+      <Slot className="text-green-500">{children}</Slot>
     </div>
   );
 }
