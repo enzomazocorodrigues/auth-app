@@ -6,7 +6,7 @@ import { PageIcon } from "../components/PageIcon";
 
 export default function SignUp() {
   return (
-    <div className="w-full h-full bg-slate-100 flex justify-center items-center p-14">
+    <div className="w-full h-full bg-slate-100 flex justify-center items-center p-10">
       <div className="w-[426px] bg-white drop-shadow-sm rounded-md p-6 flex flex-col gap-6">
         <div className="flex gap-4 items-center">
           <PageIcon>
